@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Pokemon</h1>
+    <ul class="pokemon">
+      <li><%= pokemon.name %></li>
+      <img src="<%= pokemon.img%>" alt="" />
+    </ul>
+    <form action="/pokemon/<%= pokemon.id %>?_method=DELETE" method="POST">
+      <input type="submit" value="Delete" />
+    </form>
+    <a href="/pokemon/<%= pokemon.id %>/edit">Edit</a>
+    <br /><br />
+  </body>
+</html>

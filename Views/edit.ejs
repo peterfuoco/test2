@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="/css/app.css">
+    </head>
+    <body>
+        <h1>Edit Pokemon Page</h1>
+            <form action="/pokemon/<%=pokemon.id%>?_method=PUT" method="POST">
+		<!--  NOTE: the form is pre-populated with values for the server-->
+		Name: <input type="text" name="name" value="<%=pokemon.name%>"/><br/>
+		Image: <input type="text" name="image" value="<%=pokemon.img%>"/><br/>
+		<input type="submit" name="" value="Edit Pokemon"/>
+        </form>
+    </body>
+</html>
